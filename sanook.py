@@ -28,7 +28,7 @@ tag_lis = []
 content_lis = []
 time_lis = []
 
-post_lis =  [url.find('a')['href'] for url in soup.find_all('div',{'class':'archive-post-col'})][:6]
+post_lis =  [url.find('a')['href'] for url in soup.find_all('div',{'class':'archive-post-col'})]
 for url in post_lis: 
     driver.get(url)
     
